@@ -145,6 +145,37 @@ Export-NAVApplicationObject -DatabaseServer CHALITO -DatabaseName "RBA" -Path C:
 # Queries
 Export-NAVApplicationObject -DatabaseServer CHALITO -DatabaseName "RBA" -Path C:\BCUPGRADE13TO24\Queries\OldBaseVersion.txt -Filter "Type=Query;Id=51511000..51515000"
 ```
+### 8.3 Conversion .txt to AL commands
+``` powershell
+cd "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client"
+
+#Reports
+txt2al --source=C:\BCUPGRADE13TO24\Reports --target=C:\BCUPGRADE13TO24\Reports\AL
+
+#Report Extensions
+txt2al --source=C:\BCUPGRADE13TO24\ReportExtensions --target=C:\BCUPGRADE13TO24\ReportExtensions\AL
+
+#Tables
+txt2al --source=C:\BCUPGRADE13TO24\Table --target=C:\BCUPGRADE13TO24\Table\AL
+
+#Table Extensions
+txt2al --source=C:\BCUPGRADE13TO24\TableExtensions --target=C:\BCUPGRADE13TO24\TableExtensions\AL
+
+#Pages
+txt2al --source=C:\BCUPGRADE13TO24\Pages --target=C:\BCUPGRADE13TO24\Pages\AL
+
+#Page Extensions
+txt2al --source=C:\BCUPGRADE13TO24\PageExtensions --target=C:\BCUPGRADE13TO24\PageExtensions\AL
+
+#Query
+txt2al --source=C:\BCUPGRADE13TO24\Query --target=C:\BCUPGRADE13TO24\Query\AL
+
+#XMLPort
+txt2al --source=C:\BCUPGRADE13TO24\XMLPort --target=C:\BCUPGRADE13TO24\XMLPort\AL
+
+#CodeUnit
+txt2al --source=C:\BCUPGRADE13TO24\CodeUnit --target=C:\BCUPGRADE13TO24\CodeUnit\AL 
+```
 
 ---
 
@@ -152,7 +183,7 @@ Export-NAVApplicationObject -DatabaseServer CHALITO -DatabaseName "RBA" -Path C:
 
 - [Upgrading the Data to Business Central](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/upgrading-the-data)
 - [Upgrading the Application Code in Business Central](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/upgrading-the-application-code)
-
+- [Upgrading Customized C/AL Application to Microsoft Base Application version 24](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/upgrade-to-microsoft-base-app-v24)
 ---
 
 ---
