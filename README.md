@@ -122,19 +122,19 @@ C:\BCUPGRADE13TO24
 Export-NAVApplicationObject -DatabaseServer CHALITO -DatabaseName "RBA" -Path C:\BCUPGRADE13TO24\Tables\OldBaseVersion.txt -Filter "Type=Table;Id=51511000..51515000"
 
 # Table Extensions
-Export-NAVApplicationObject -DatabaseServer CHALITO -DatabaseName "RBA" -Path C:\BCUPGRADE13TO24\Table Extensions\OldBaseVersion.txt -Filter "Type=Table;Modified=1;Id=1..51510999"
+Export-NAVApplicationObject -DatabaseServer CHALITO -DatabaseName "RBA" -Path C:\BCUPGRADE13TO24\TableExtensions\OldBaseVersion.txt -Filter "Type=Table;Modified=1;Id=1..51510999"
 
 # Pages
 Export-NAVApplicationObject -DatabaseServer CHALITO -DatabaseName "RBA" -Path C:\BCUPGRADE13TO24\Pages\OldBaseVersion.txt -Filter "Type=Page;Id=51511000..51515000"
 
 # Page Extensions
-Export-NAVApplicationObject -DatabaseServer CHALITO -DatabaseName "RBA" -Path C:\BCUPGRADE13TO24\Page Extensions\OldBaseVersion.txt -Filter "Type=Page;Modified=1;Id=1..51510999"
+Export-NAVApplicationObject -DatabaseServer CHALITO -DatabaseName "RBA" -Path C:\BCUPGRADE13TO24\PageExtensions\OldBaseVersion.txt -Filter "Type=Page;Modified=1;Id=1..51510999"
 
 # Reports
 Export-NAVApplicationObject -DatabaseServer CHALITO -DatabaseName "RBA" -Path C:\BCUPGRADE13TO24\Reports\OldBaseVersion.txt -Filter "Type=Report;Id=51511000..51515000"
 
 # Report Extensions
-Export-NAVApplicationObject -DatabaseServer CHALITO -DatabaseName "RBA" -Path C:\BCUPGRADE13TO24\Report Extensions\OldBaseVersion.txt -Filter "Type=Report;Modified=1;Id=1..51510999"
+Export-NAVApplicationObject -DatabaseServer CHALITO -DatabaseName "RBA" -Path C:\BCUPGRADE13TO24\ReportExtensions\OldBaseVersion.txt -Filter "Type=Report;Modified=1;Id=1..51510999"
 
 # XMLPorts
 Export-NAVApplicationObject -DatabaseServer CHALITO -DatabaseName "RBA" -Path C:\BCUPGRADE13TO24\XMLPort\OldBaseVersion.txt -Filter "Type=XMLport;Id=51511000..51515000"
