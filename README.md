@@ -189,3 +189,11 @@ txt2al --source=C:\BCUPGRADE13TO24\CodeUnit --target=C:\BCUPGRADE13TO24\CodeUnit
 ---
 
 **✅ You are now ready to upgrade your RBA BC 13 database to BC 24.**
+
+
+## CREATE NEW USER
+
+Set-ExecutionPolicy Bypass -Scope Process -Force
+Import-Module 'C:\Program Files\Microsoft Dynamics 365 Business Central\130\Service\NavAdminTool.ps1'
+New-NAVServerUser BC130 -WindowsAccount $(whoami)
+New-NAVServerUserPermissionSet BC130 -WindowsAccount $(whoami) -PermissionSetId SUPER
